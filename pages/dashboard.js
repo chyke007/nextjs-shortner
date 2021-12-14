@@ -4,7 +4,7 @@ import MyContext from '../lib/context';
 import { useRouter } from "next/router";
 import Link from 'next/link';
 import { logout } from '../lib/auth'
-import { get, deleteAlias } from '../lib/shortner'
+import { get, deleteAlias } from '../lib/shortener'
 
 export default function Dashboard() {
     const { isLoggedIn, setUser, user, setUrls, urls } = useContext(MyContext)
@@ -44,7 +44,7 @@ export default function Dashboard() {
             </Head>
             <header className="flex justify-between align-center p-4 h-32 w-full text-6xl font-bold text-blue-600">
                 <h1 className="text-6xl font-bold text-blue-600">
-                    Url Shortner
+                    Url Shortener
 
                 </h1>
                 <span className="text-sm font-bold text-red-600 cursor-pointer" onClick={() => signOut()}>Logout</span>

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { getSingle } from "../lib/shortner";
+import { getSingle } from "../lib/shortener";
 
 
 const AliasView = ({ error }) => {

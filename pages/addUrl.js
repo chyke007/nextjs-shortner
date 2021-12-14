@@ -4,7 +4,7 @@ import React, { useEffect, useContext, useState } from 'react';
 import MyContext from '../lib/context';
 import { useRouter } from "next/router";
 import { logout } from '../lib/auth'
-import { create } from '../lib/shortner'
+import { create } from '../lib/shortener'
 
 export default function AddUrl() {
     const { isLoggedIn, setUser } = useContext(MyContext)
@@ -49,7 +49,7 @@ export default function AddUrl() {
             </Head>
             <header className="flex justify-between align-center p-4 h-32 w-full text-6xl font-bold text-blue-600">
                 <h1 className="text-6xl font-bold text-blue-600">
-                    Url Shortner
+                    Url Shortener
 
                 </h1>
                 <span className="text-sm font-bold text-red-600 cursor-pointer" onClick={() => signOut()}>Logout</span>
