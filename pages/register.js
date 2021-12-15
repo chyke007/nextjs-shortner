@@ -19,7 +19,7 @@ export default function Register() {
     if (isLoggedIn) {
      return router.push("/dashboard");
     }
-  }, [])
+  }, [isLoggedIn])
 
   const submit = async () => {
 
